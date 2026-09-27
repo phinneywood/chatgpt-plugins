@@ -1,0 +1,26 @@
+# ChatGPT plugins
+
+Source for Antonio's personal ChatGPT skills and their cloud plugin releases.
+
+## What lives here
+
+- `skills/<name>/`: reviewed skill instructions and resources. `pocock-handoff` is the source for the installed cloud plugin; `chatgpt-plugin-factory` is the release workflow used in Work.
+- `plugins/<name>/plugin.json`: versioned manifest for each cloud plugin.
+- `scripts/build_plugin.py`: assemble a skills-only ZIP from the selected skill folders.
+- `releases/`: evidence of source, upload, installation, and fresh host loading. A ZIP in `dist/` is a build artifact, not an installed plugin.
+
+## Add or update a skill
+
+1. Use ChatGPT Work's `skill-creator` and `chatgpt-plugin-factory` to create or revise the personal skill and validate it in the managed checkout. Review its files, then copy the approved source into `skills/<name>/` here. Commit the source. This GitHub repository is the durable review and release history; the managed personal-skill copy is an installation that must be kept in sync. Host-specific `agents/openai.yaml` metadata may differ between personal and cloud installations; compare the actual `SKILL.md` bytes for the release.
+2. Put essential instructions in `SKILL.md`. Ordinary Chat read `SKILL.md` in the `pocock-handoff` control test but did not expose its bundled `HOST.md` through the native reader.
+3. Add or increment `plugins/<plugin-name>/plugin.json`. Build the archive:
+
+   ```bash
+   python3 scripts/build_plugin.py pocock-handoff
+   ```
+
+   For a related set of skills sharing one release, pass their names: `python3 scripts/build_plugin.py my-plugin --skills first-skill second-skill`. Inspect the ZIP and validate the actual candidate before upload.
+4. Upload the ZIP in ChatGPT **Plugins → Personal → Add → Upload plugin archive**, then install it. For an existing cloud plugin use **More actions → Upload new version**. Updating GitHub or the personal-skills checkout alone does not update the cloud plugin.
+5. Open a fresh ordinary Chat without copied instructions. Ask it to discover the installed skill and read `SKILL.md` through its native reader; require a distinctive instruction from that installed version. Verify behavior separately. Test iOS separately before claiming support. Record each gate in `releases/`.
+
+The current control release is [`pocock-handoff` 1.0.1](releases/pocock-handoff-1.0.1.md). See [`chatgpt-plugin-factory`](skills/chatgpt-plugin-factory/SKILL.md) for the full checklist and boundaries. The upstream Pocock handoff license is retained in its skill folder.
