@@ -9,6 +9,15 @@ Source for Antonio's personal ChatGPT skills and their cloud plugin releases.
 - `scripts/build_plugin.py`: assemble a skills-only ZIP from the selected skill folders.
 - `releases/`: evidence of source, upload, installation, and fresh host loading. A ZIP in `dist/` is a build artifact, not an installed plugin.
 
+## Skill inventory
+
+| Skill | Source | Ordinary Chat status |
+| --- | --- | --- |
+| `pocock-handoff` | [`skills/pocock-handoff/`](skills/pocock-handoff/) | Cloud plugin 1.0.1 read in fresh web Chat. |
+| `distill` | [`skills/distill/`](skills/distill/) | Source and personal skill preserved; cloud plugin and fresh ordinary Chat reading are unverified. |
+| `chatgpt-plugin-factory` | [`skills/chatgpt-plugin-factory/`](skills/chatgpt-plugin-factory/) | Installed as a personal Work skill; ordinary Chat use is unverified. |
+| Strategy Factory stages | [Strategy Factory repository](https://github.com/phinneywood/strategy-factory/tree/main/skills) | Keep source in that project; ordinary Chat loading remains to be tested. |
+
 ## Add or update a skill
 
 1. Use ChatGPT Work's `skill-creator` and `chatgpt-plugin-factory` to create or revise the personal skill and validate it in the managed checkout. Review its files, then copy the approved source into `skills/<name>/` here. Commit the source. This GitHub repository is the durable review and release history; the managed personal-skill copy is an installation that must be kept in sync. Host-specific `agents/openai.yaml` metadata may differ between personal and cloud installations; compare the actual `SKILL.md` bytes for the release.
