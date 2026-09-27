@@ -13,7 +13,7 @@ Source for Antonio's personal ChatGPT skills and their cloud plugin releases.
 
 | Skill | Source | Ordinary Chat status |
 | --- | --- | --- |
-| `writers-packet` | [`skills/writers-packet/`](skills/writers-packet/) | Personal Work install persisted; cloud upload awaits user confirmation; ordinary Chat/iOS unverified. See [release candidate](releases/writers-packet-1.0.0.md). |
+| `writers-packet` | [`skills/writers-packet/`](skills/writers-packet/) | Cloud 1.0.0 installed; native loading and explicit behavior verified in fresh web Chat. Automatic use failed; iOS unverified. See [release evidence](releases/writers-packet-1.0.0.md). |
 | `pocock-handoff` | [`skills/pocock-handoff/`](skills/pocock-handoff/) | Cloud plugin 1.0.1 read in fresh web Chat. |
 | `distill` | [`skills/distill/`](skills/distill/) | Source and personal skill preserved; cloud plugin and fresh ordinary Chat reading are unverified. |
 | `investigate-prior-art` | [`skills/investigate-prior-art/`](skills/investigate-prior-art/) | Source and personal skill preserved; depends on `strategy-factory`; cloud plugin and fresh ordinary Chat reading are unverified. |

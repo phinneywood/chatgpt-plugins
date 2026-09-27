@@ -1,36 +1,40 @@
-# Writer’s Packet 1.0.0 — release candidate
+# Writer’s Packet 1.0.0 — installed; automatic activation unresolved
 
 Date: 2026-09-27
-Source: `6cb309581b811e5812bac4e62b23c8f8447241b9`
-Target: personal Work skill and separate ordinary Chat plugin.
+Skill source: `6cb309581b811e5812bac4e62b23c8f8447241b9`
+Target: personal Work skill and separate ordinary Chat cloud plugin.
 
-| Gate | Status | Evidence |
+| Gate | Status | Evidence and scope |
 | --- | --- | --- |
-| Static validation | Passed | Host quick_validate.py on managed candidate; package checker ok=true with no errors. No full-schema or security certification claimed. |
-| Personal skill persisted | Passed | Supported save completed; reconciled remote path found with matching SKILL.md SHA-256. |
-| Source equality | Passed | SKILL.md SHA-256 `39bd17730479ed99bedf6d0f06ce81bf381dc7c35f58cddf06d6661cd64cb6ac`; candidate ZIP entries inspected and compared byte-for-byte. |
-| Cloud archive | Built | `writers-packet-1.0.0.zip`, SHA-256 `ccbdb4af3f013c1ec6dfc17c7cc644a858c409584ba174804dd892814dc44626`. Build with the existing build_plugin.py. |
-| ChatGPT customization | Saved and verified | Appended concise authorial boundary; reopened form and confirmed exact original text plus addition. Unrelated customization preserved. |
-| Behavioral forward tests | Passed, source-loaded Work agents only | Portfolio, whitepaper, LinkedIn preparation; diagnostic critique; comparison without third version; explicit rewrite; assistant email draft. See test record below. |
-| Cloud upload/install | Blocked before upload | Automatic approval review rejected file selection because the current authored user message was only a document URL. Need explicit authorization to upload and install this archive in ChatGPT. No bypass attempted. |
-| Fresh ordinary Chat discovery/read | Unverified | Pending cloud installation; do not claim completion. |
-| Fresh ordinary Chat behavior | Unverified | Pending installation and native reader evidence. |
-| iOS | Unverified | Requires a separate fresh iOS check. |
+| Static validation | Passed | Host validator on managed candidate; package checker ok=true, no errors. No full-schema/security certification claimed. |
+| Personal skill persisted | Passed | Supported save and reconciled remote path with matching SKILL.md hash. |
+| Source equality | Passed for package | SKILL.md SHA-256 `39bd17730479ed99bedf6d0f06ce81bf381dc7c35f58cddf06d6661cd64cb6ac`; archive bytes matched source. Cloud skill body was also inspected through ordinary Chat’s Sources panel. No independent hash of server-stored plugin bytes is claimed. |
+| Cloud archive | Installed | Version 1.0.0; ZIP SHA-256 `ccbdb4af3f013c1ec6dfc17c7cc644a858c409584ba174804dd892814dc44626`. After explicit approval, uploaded through Plugins → Personal → Add, then selected Install plugin. Detail page showed version 1.0.0 and Try in chat. |
+| ChatGPT customization | Saved and verified | Authorial boundary saved, reopened, and compared. After automatic-use failure, strengthened it to require writers-packet and placed it first. All unrelated original customization preserved. |
+| Fresh ordinary Chat discovery/read | Passed with UI evidence | Fresh web Chat found `skills://plugins/writers-packet/writers-packet`, exposed Writer’s Packet in its native Sources → Skills panel, and opened the complete installed skill body. A subsequent read reported `api_tool.read_resource` with `uri=skills://plugins/writers-packet/writers-packet/SKILL.md`, start_line=1, num_lines=200, and reproduced the exact scoped-drafting instruction absent from the prompt. Raw hidden tool traces are not independently exposed by this browser surface; evidence is the native skill-source panel plus the read result rendered in Chat. |
+| Explicitly loaded Chat behavior | Core boundary cases passed | Portfolio/whitepaper/LinkedIn preparation, diagnostic critique, comparison without a third version, explicit rewrite, and assistant email draft. See raw fictional test transcript. |
+| Automatic activation / global boundary | Failed | A plain fictional portfolio request produced publication prose. A real-project “Help me write a portfolio page…” request also drafted copy. Strengthening and moving the custom rule to the top did not fix a fresh-chat retest. Do not describe the global rule as reliably enforced. |
+| iOS | Unverified | No fresh iOS test performed. Web success is not iOS proof. |
 
-## Scope
+## Usage and remaining work
 
-One self-contained skill plus a global customization invariant. No MCP server, executable helper, or new access permission. Attribution to Thomas Ptacek’s [How To Write With An LLM](https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/) is included in SKILL.md. The pre-writing packet and explicit-drafting exception are identified as adaptations.
+Verified route: explicitly ask to use Writer’s Packet, or select the installed plugin. Example: “Use Writer’s Packet to help me prepare a portfolio case study.”
 
-## Resume
+Installation and explicit-load verification are complete. Reliable automatic use for ordinary writing prompts remains unresolved. Customization is a model instruction, and these tests showed it can be ignored. No product-level enforcement is claimed. Avoid repeated wording changes without a new diagnostic hypothesis. Test iOS separately.
 
-After explicit upload/install authorization, use ChatGPT Plugins → Personal → Add → Upload plugin archive. Select the validated candidate, add it, then Install plugin. Start fresh ordinary Chat without copied skill content; discover writers-packet and read its installed SKILL.md through native tools. Retain tool evidence and run the seven behavior cases in the handoff. Record exact plugin version, fresh Chat evidence, and limits here. Test iOS separately.
+The earlier upload-approval blocker was resolved by the owner’s explicit approval in the continuation. No new MCP service, executable helper, credential, or data access was added.
 
-## Forward tests
+## Behavior evidence
 
-Two independent agents loaded the source file, with only fictional task context. Neither modified live systems. Actual outputs retained in [writers-packet-1.0.0-forward-tests.md](writers-packet-1.0.0-forward-tests.md). Tests showed preparation rather than publication copy; a factual, bounded rewrite on explicit request; and a short assistant email draft. Source-loaded agent behavior is not proof of installed ordinary Chat behavior.
+- [Source-loaded Work forward tests](writers-packet-1.0.0-forward-tests.md).
+- [Ordinary Chat fictional behavior transcript](writers-packet-1.0.0-chat-tests.txt).
+- Actual ordinary Chat output satisfied the no-ghostwriting cases when explicitly loaded. It labeled supplied fictional facts “Verified facts” once and listed multiple questions, so evidence labeling and question count were imperfect; passing the core boundary is not a claim of perfect compliance.
+- Real-project failure transcripts and private verification-chat pointers remain in the owner’s project records; they are not published here as authored portfolio prose.
+
+## Attribution
+
+Inspired by Thomas Ptacek’s [How To Write With An LLM](https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/) (*A Final Ward*, September 17, 2026). SKILL.md distinguishes the preparation packet and scoped drafting exception as adaptations.
 
 ## Restore
 
-Prior repository source: `8bab66fcbaf6fe812c8c84f61cb5a25c230195c2`. This is a new skill/plugin; no previous cloud version was replaced. Rebuild the pinned source for byte verification. Revert only the added authorial-boundary paragraph if the owner later requests it.
-
-Invocation after release: “Use Writer’s Packet to help me prepare a portfolio case study.”
+Prior repository source: `8bab66fcbaf6fe812c8c84f61cb5a25c230195c2`. New plugin; no older cloud plugin version was replaced. Rebuild using the existing build_plugin.py and pinned manifest. Reverse the authorial-boundary customization only if the owner requests it.
