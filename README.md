@@ -15,6 +15,7 @@ Source for Antonio's personal ChatGPT skills and their cloud plugin releases.
 | --- | --- | --- |
 | `pocock-handoff` | [`skills/pocock-handoff/`](skills/pocock-handoff/) | Cloud plugin 1.0.1 read in fresh web Chat. |
 | `distill` | [`skills/distill/`](skills/distill/) | Source and personal skill preserved; cloud plugin and fresh ordinary Chat reading are unverified. |
+| `investigate-prior-art` | [`skills/investigate-prior-art/`](skills/investigate-prior-art/) | Source and personal skill preserved; depends on `strategy-factory`; cloud plugin and fresh ordinary Chat reading are unverified. |
 | `chatgpt-plugin-factory` | [`skills/chatgpt-plugin-factory/`](skills/chatgpt-plugin-factory/) | Installed as a personal Work skill; ordinary Chat use is unverified. |
 | Strategy Factory stages | [Strategy Factory repository](https://github.com/phinneywood/strategy-factory/tree/main/skills) | Keep source in that project; ordinary Chat loading remains to be tested. |
 
