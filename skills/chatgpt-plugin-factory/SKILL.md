@@ -7,6 +7,8 @@ description: Build, update, validate, install, and verify reusable ChatGPT Work 
 
 Turn a concrete repeated workflow into the smallest useful skill package. Prefer updating an existing skill over creating a duplicate. Maintain one canonical set of instructions in the user's chosen repository, with thin host packaging where necessary.
 
+For Antonio's collection, use `https://github.com/phinneywood/chatgpt-plugins` as the reviewed source and release history. Keep the managed personal-skill installation and any uploaded cloud plugin release in sync explicitly; neither updates from GitHub automatically.
+
 ## Release workflow
 
 1. Establish the task, target host and conversation mode, example, and success criteria. Reuse supplied context; ask only consequential missing questions. Start with one entry skill; split specialists only for independently useful tasks.
