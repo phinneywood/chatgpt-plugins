@@ -16,7 +16,7 @@ This is a collection of separate plugins, not one combined plugin. Assistant Har
 | Skill | Source | Ordinary Chat status |
 | --- | --- | --- |
 | Assistant Harness core | [Package and setup](docs/assistant-harness.md) | Four shared skills plus private configuration and pinned schedule prompts. Personal Work installation and cloud/native behavior gates are recorded separately in [release evidence](releases/assistant-harness-1.0.0.md). |
-| `long-form-kindle` | [`skills/long-form-kindle/`](skills/long-form-kindle/) | Cloud 1.0.0 installed and native reading verified in ordinary Chat. Revised Work skill preserves structured documents. Combined 1.1.0 package prepared; upload and duplicate cleanup await explicit approval. See [release evidence](releases/long-form-kindle-1.1.0.md). |
+| `long-form-kindle` | [`skills/long-form-kindle/`](skills/long-form-kindle/) | Cloud 1.2.0 installed in place; native skill and contract loading verified in ordinary Chat. Refreshed connected service supports setup/send/status/history. Full UI retained; shared connection entry and iOS-host limits recorded in [release evidence](releases/long-form-kindle-1.2.0.md). |
 | `writers-packet` | [`skills/writers-packet/`](skills/writers-packet/) | Cloud 1.0.0 installed; native loading and explicit behavior verified in fresh web Chat. Automatic use failed; iOS unverified. See [release evidence](releases/writers-packet-1.0.0.md). |
 | `pocock-handoff` | [`skills/pocock-handoff/`](skills/pocock-handoff/) | Cloud plugin 1.0.1 read in fresh web Chat. |
 | `distill` | [`skills/distill/`](skills/distill/) | Source and personal skill preserved; cloud plugin and fresh ordinary Chat reading are unverified. |
