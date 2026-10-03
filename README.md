@@ -1,4 +1,18 @@
-# ChatGPT plugins
+# chatgpt-plugins — transition index
+
+Source is being split by project.
+
+| Project | Source home | Migration status |
+| --- | --- | --- |
+| Harness and assistant utilities | [outer-harness](https://github.com/phinneywood/outer-harness) | Active canonical source; verified Assistant Harness 1.0.0 package |
+| Long Form skill/package | [Long Form](https://github.com/phinneywood/long-form) | [Source relocation draft](https://github.com/phinneywood/long-form/pull/82); package matches installed 1.2.0 |
+| Prior-art companion | [Strategy Factory](https://github.com/phinneywood/strategy-factory) | [Staged companion draft](https://github.com/phinneywood/strategy-factory/pull/4); coordinator compatibility gate remains |
+
+Use [outer-harness setup](https://github.com/phinneywood/outer-harness/blob/main/docs/assistant-harness.md) for new harness installations. Existing installation identities stay stable during source relocation. Source changes do not update installed plugins or task registrations automatically.
+
+This repository retains old source and release history until all consumers and product moves are verified. It is not archived yet. Historic commit metadata and earlier deployment links remain in history; current personal verification pointers belong in private records.
+
+## Original collection documentation
 
 Source for Antonio's personal ChatGPT skills and their cloud plugin releases.
 
