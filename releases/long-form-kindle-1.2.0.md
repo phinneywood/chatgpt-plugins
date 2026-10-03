@@ -35,9 +35,9 @@ Sending/status responses preserve existing job fields and add a consistent deliv
 | Production | Passed | Seven tools on default endpoint; 22 on reader compatibility discovery; live profile/history/status reads succeed; deployed frontend includes Kindle-only setup and publication UI. |
 | iOS Chat host | Unverified for this release | WebKit product checks pass. The ChatGPT iOS host has not been tested after this update. |
 
-Native-reader check: https://chatgpt.com/c/6ac16e24-477c-83e8-88b5-ac031d756442
+Native-reader check: personal verification record retained privately.
 
-Fresh service setup check: https://chatgpt.com/c/6ac16ff1-abe4-83e8-a174-b7929b111c63
+Fresh service setup check: personal verification record retained privately.
 
 ## Limits and remaining work
 
