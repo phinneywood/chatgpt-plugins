@@ -2,6 +2,8 @@
 
 Source for Antonio's personal ChatGPT skills and their cloud plugin releases.
 
+This is a collection of separate plugins, not one combined plugin. Assistant Harness contains only `assistant-harness`, `portfolio-pm`, `knowledge-reconcile`, and `harness-audit`. Long Form, Writers Packet, and Pocock Handoff have independent packages; installing Assistant Harness does not install them.
+
 ## What lives here
 
 - `skills/<name>/`: reviewed skill instructions and resources. `pocock-handoff` is the source for the installed cloud plugin; `chatgpt-plugin-factory` is the release workflow used in Work.
@@ -37,3 +39,9 @@ Source for Antonio's personal ChatGPT skills and their cloud plugin releases.
 5. Open a fresh ordinary Chat without copied instructions. Ask it to discover the installed skill and read `SKILL.md` through its native reader; require a distinctive instruction from that installed version. Verify behavior separately. Test iOS separately before claiming support. Record each gate in `releases/`.
 
 The current control release is [`pocock-handoff` 1.0.1](releases/pocock-handoff-1.0.1.md). See [`chatgpt-plugin-factory`](skills/chatgpt-plugin-factory/SKILL.md) for the full checklist and boundaries. The upstream Pocock handoff license is retained in its skill folder.
+
+## Public sharing and licensing
+
+Original code and documentation are available under the [MIT license](LICENSE). Retain the upstream copyright and license in `skills/pocock-handoff/LICENSE` when redistributing that skill, and preserve source attribution elsewhere. This license does not grant access to connected accounts or private deployment records.
+
+Keep account configuration, schedule backups, installed identities, and verification-chat links privately. Public release records retain generic test evidence. Registered service app mappings and public service endpoints are intentional integration metadata; each user must establish their own authorized service connection. See [the repository hygiene procedure](docs/repository-hygiene.md) for a reusable scheduled audit.

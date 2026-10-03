@@ -33,3 +33,7 @@ Other personal briefs, release watches and chat-cleanup jobs remain separate. Au
 Run `python3 -m unittest discover -s tests -p 'test_harness_config.py' -v`. Use the fixtures for independent prepare-only behavior checks. Also verify native discovery/readability, explicit workflow behavior, first independent saved-task execution and device-specific loading separately. Preserve actual outputs; a static validator or plausible answer is not runtime proof.
 
 Accept context recovery only when a fresh conversation reads the current authoritative records. Accept reconciliation when real writes are read back, repeated runs avoid duplicate effects, failed writes do not advance progress, and account/sharing boundaries hold. Test iOS separately. See the release record for observed gates and remaining limits.
+
+## Repository hygiene
+
+Run the existing `harness-audit` skill with the [repository hygiene procedure](repository-hygiene.md) loaded from a pinned source revision. Keep target repositories, policy exceptions, checkpoints and the task registration in private configuration. Schedule a separate low-frequency read-only audit unless an existing audit already covers it; preserve other registrations. This adds a shared scheduled recipe without changing the installed four-skill 1.0.0 package.
