@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a skills-only cloud plugin archive from reviewed repository source."""
+"""Build a cloud plugin archive from reviewed repository source."""
 
 import argparse
 import hashlib
@@ -22,6 +22,15 @@ def build(plugin: str, skills: list[str], destination: Path) -> Path:
     if manifest.get("name") != plugin or not VERSION.fullmatch(str(manifest.get("version", ""))):
         raise ValueError("manifest name or semantic version is invalid")
     entries = [("plugin.json", manifest_path)]
+    apps_file = manifest.get("extensions", {}).get("com.openai", {}).get("apps")
+    if apps_file:
+        if apps_file != "./.app.json":
+            raise ValueError("app mapping must be ./.app.json")
+        apps_path = manifest_path.parent / ".app.json"
+        apps = json.loads(apps_path.read_text(encoding="utf-8")).get("apps", {})
+        if not apps or any(not isinstance(app, dict) or not re.fullmatch(r"(?:asdk_app_|connector_|templated_apps_)[a-zA-Z0-9_]+", str(app.get("id", ""))) for app in apps.values()):
+            raise ValueError("app mapping must reference registered app IDs")
+        entries.append((".app.json", apps_path))
     for name in skills:
         source = ROOT / "skills" / name
         if not (source / "SKILL.md").is_file():

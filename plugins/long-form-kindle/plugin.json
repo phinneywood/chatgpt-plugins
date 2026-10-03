@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "long-form-kindle",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Route reading packets and custom documents through Long Form\u2019s validated Kindle delivery pipeline.",
   "author": {
     "name": "Antonio Skilton"
@@ -9,9 +9,9 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "Long Form Kindle",
-        "shortDescription": "Prepare and send validated Kindle reading issues",
-        "longDescription": "Use authenticated Long Form tools to preserve article originals or package supplied custom sections into validated EPUB issues. Verify provider status, avoid duplicate delivery, and preserve explicit sending authorization. Requires the separate Long Form account connection.",
+        "displayName": "Long Form",
+        "shortDescription": "Make and send readable Kindle issues",
+        "longDescription": "Prepare reading packets and structured documents, send validated Kindle EPUBs, and verify delivery through your existing Long Form account connection.",
         "developerName": "Antonio Skilton",
         "category": "Productivity",
         "capabilities": [
@@ -19,7 +19,8 @@
           "Send original article packets",
           "Verify delivery without duplicate sends"
         ]
-      }
+      },
+      "apps": "./.app.json"
     }
   }
 }

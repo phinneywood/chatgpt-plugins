@@ -6,14 +6,14 @@ Source for Antonio's personal ChatGPT skills and their cloud plugin releases.
 
 - `skills/<name>/`: reviewed skill instructions and resources. `pocock-handoff` is the source for the installed cloud plugin; `chatgpt-plugin-factory` is the release workflow used in Work.
 - `plugins/<name>/plugin.json`: versioned manifest for each cloud plugin.
-- `scripts/build_plugin.py`: assemble a skills-only ZIP from the selected skill folders.
+- `scripts/build_plugin.py`: assemble a ZIP with skills and optional registered app mappings from the selected skill folders.
 - `releases/`: evidence of source, upload, installation, and fresh host loading. A ZIP in `dist/` is a build artifact, not an installed plugin.
 
 ## Skill inventory
 
 | Skill | Source | Ordinary Chat status |
 | --- | --- | --- |
-| `long-form-kindle` | [`skills/long-form-kindle/`](skills/long-form-kindle/) | Personal Work skill saved; cloud package validated but not uploaded/installed. Requires the separate authenticated Long Form connection. |
+| `long-form-kindle` | [`skills/long-form-kindle/`](skills/long-form-kindle/) | Cloud 1.0.0 installed and native reading verified in ordinary Chat. Revised Work skill preserves structured documents. Combined 1.1.0 package prepared; upload and duplicate cleanup await explicit approval. See [release evidence](releases/long-form-kindle-1.1.0.md). |
 | `writers-packet` | [`skills/writers-packet/`](skills/writers-packet/) | Cloud 1.0.0 installed; native loading and explicit behavior verified in fresh web Chat. Automatic use failed; iOS unverified. See [release evidence](releases/writers-packet-1.0.0.md). |
 | `pocock-handoff` | [`skills/pocock-handoff/`](skills/pocock-handoff/) | Cloud plugin 1.0.1 read in fresh web Chat. |
 | `distill` | [`skills/distill/`](skills/distill/) | Source and personal skill preserved; cloud plugin and fresh ordinary Chat reading are unverified. |

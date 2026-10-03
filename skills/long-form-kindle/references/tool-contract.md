@@ -10,10 +10,10 @@ Require a connected Long Form account. Server: `https://reader.antonioskilton.co
 | Delivery evidence | `get_delivery_history` | optional `limit` (1–100) |
 
 Custom document details:
-- `content`: 1–250,000 characters. `format`: `text` (default) or `html`.
+- `content`: 1–250,000 characters. `format`: `text` (default), `markdown`, or `html`.
 - `sections`: 1–20 objects in reading order, each with `title` (1–200 characters), `content` (1–250,000 characters), optional `format`. Total content limit: 1,000,000 characters.
 - `source_links`: up to 40 http(s) URL strings, appended as a Sources entry. They are not fetched as original articles.
-- Plain text is escaped; HTML is sanitized by Long Form. Supported public images use the canonical embedding pipeline; unsupported images can yield `partial` with explicit diagnostics.
+- Plain text is literal and escaped. Markdown is parsed with GFM support and sanitized; HTML is sanitized by Long Form. Prefer Markdown or semantic HTML for structured documents, and preserve code whitespace. Custom issues use their title on the cover and named chapters in Kindle navigation. Supported public images use the canonical embedding pipeline; unsupported images can yield `partial` with explicit diagnostics.
 - `dedupe_key`: 1–120 letters, numbers, dots, underscores, colons, or hyphens. Same key + same payload returns the existing job. Same key + different payload returns a conflict.
 - Delivery response: `{ok, created, worker_triggered, job: {id, status, packet_name}}`. Status response: `{job}` including `status`, `error`, and `result`.
 
