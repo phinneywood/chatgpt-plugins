@@ -30,4 +30,3 @@ Immediately before each move/rename verify ownership/current parents/sharing/des
 If current policy specifies first-independent-run acceptance, follow exact grounded operations and record real timestamps/commit/file/parent evidence. Manual success/pre-existing marker/task creation/accepted run request do not prove unattended execution. Never manufacture proof with arbitrary reversible mutations. Complete setup only after every required independent write/readback passes; recurring maintenance continues afterward.
 
 Keep routine success/no change silent when configured. Report every required-tool/read/write/auth/approval/conflict/verification error with operation, concrete returned failure, pending work and necessary action. Never mark blocked work verified. Maintenance authority excludes messages/deletion/sharing/purchases/bookings/terms/publication/secrets.
-

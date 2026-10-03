@@ -31,4 +31,3 @@ Separate source saved, static validity, personal Work installation, cloud plugin
 Routine maintenance requires the appropriate config permission and current authorization. Preserve per-message sending approval, the substantial-writing boundary, and separate authorization for deletion/access changes/purchases/bookings/rescheduling/terms/public-facing publication. Proposed times do not authorize choosing or booking. Hygiene does not authorize rewriting documents.
 
 Follow `transport.mode`. Under `mcp_only`, no browser fallback, shell credentials, alternate API authentication or new infrastructure. Verify required account roles before sensitive writes. Missing tools, auth/approval barriers and readback mismatches are concrete errors; report pending work without bypassing them.
-

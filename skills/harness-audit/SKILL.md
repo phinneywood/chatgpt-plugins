@@ -29,4 +29,3 @@ Before changing a task:
 Source updates do not automatically update cloud plugins or pinned tasks. Upgrade deliberately after validation. Public Directory publication/new credentials/access/consequential actions require separate authorization. Preserve per-message sending approvals and substantial-writing boundary. Report concrete missing-tool/auth/approval/readback failures with pending work.
 
 End with verified capabilities, repairs actually made, remaining errors/unverified gates and smallest next action. Save technical evidence with the source release; synchronize material project state.
-

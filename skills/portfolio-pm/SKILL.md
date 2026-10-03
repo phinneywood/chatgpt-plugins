@@ -41,4 +41,3 @@ Record an already-authorized unambiguous confirmed commitment only if `permissio
 
 ## Errors and limits
 Follow configured transport/account roles. Under `mcp_only`, no browser/shell/API credentials/new services. Personal invitation addresses do not authorize personal Google access. Report missing tools, read/write/auth/approval failures and verification mismatches with actual operation/error, pending work and required action. No success without readback. Hygiene does not authorize deletion/access changes/publication/substantial rewrites. Preserve per-message sending approval.
-
