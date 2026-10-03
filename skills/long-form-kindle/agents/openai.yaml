@@ -1,11 +1,11 @@
 interface:
   display_name: "Long Form Kindle"
-  short_description: "Build and send validated Long Form Kindle issues"
+  short_description: "Set up Kindle and send articles or documents"
   default_prompt: "Use $long-form-kindle to make this a Long Form issue and send it to my Kindle."
 dependencies:
   tools:
     - type: "mcp"
       value: "long-form"
-      description: "Authenticated Long Form issue creation and Kindle delivery"
+      description: "Authenticated Long Form setup, delivery and history"
       transport: "streamable_http"
       url: "https://reader.antonioskilton.com/api/mcp"
